@@ -17,6 +17,12 @@ public class BankController {
 
 	@Autowired
 	BankService bankService;
+	
+
+	@RequestMapping("/hi")
+	private String Hello() {
+		return "Welcome";
+	}
 
 	@RequestMapping("/bank/{id}")
 	public Optional<Customer> getBalance(@PathVariable Long id) {
