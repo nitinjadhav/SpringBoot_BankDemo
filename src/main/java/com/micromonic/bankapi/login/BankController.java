@@ -17,7 +17,7 @@ public class BankController {
 	@Autowired
 	BankService bankService;
 
-	@RequestMapping("/hi")
+	@RequestMapping("/")
 	private String Hello() {
 		return "Welcome";
 	}
